@@ -58,6 +58,7 @@ def create_task():
     tasks.append(task)
     return jsonify({'tasks': tasks}), 201
 # 请求{"title":"Read a book"},响应结果为201
+# Set the response code to 201
 
 
 @app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['PUT'])
